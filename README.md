@@ -1,1 +1,1 @@
-# SFSU---EXCO---Intro-to-Data-Science
+# SFSU - EXCO - Intro-to-Data-Science
