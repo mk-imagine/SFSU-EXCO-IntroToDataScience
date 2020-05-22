@@ -14,3 +14,11 @@ For this project we found a dataset containing images that have already been cat
 #### The VGG16 Convolutional Neural Network
 The VGG16 model is an extremely accurate neural network which achieves a 92.7% accuracy of ImageNet, a dataset of over 15 million images belonging to over 22,000 categories.  Although this network can achieve extremely high accuracy, it has one major drawback.  Chief of its weaknesses is probably the speed with which it can be trained.  It takes an enormous amount of time to train this model.  We only trained this model for up to 25 epochs (which we will explain in more detail), so we did not achieve phenomenal results, but each epoch of training was painfully slow.  The reason for this is because as a fully connected model that ends up having a very large set of parameters to calculate.
 
+#### Implementation
+The data provided was split into the 5 categories explained earlier.  Since it was not seperated between a training set and validation set, we had to split it into the two sets.  Using a tool called "split_folders," we were able to seperate the training data into a 80/20 split of training and validation data, respectively.  To get an idea of what the data looked like, we used pytorch to create a grid of sample images from the dataset.
+
+Following this, we wanted to add image transformations to increase the amount of data we had, but were never able to actually implement it.  Instead, the ImageDataGenerator was just used to create the datasets from the image directories.  Perhaps there is a more elegant solution to this, but we are not aware of one at the moment.  The actual implementation of the VGG16 model was relatively simple and using the ImageNet weights allowed us to use the "experience" of the pre-trained model as well.
+
+We experimented a bit with freezing and unfreezing a number of the final layers of the model so that it would be specialized towards the dataset we provided it.  After this experimentation, we settled on unfreezing the final 8 layers.  Even with only 8 layers unfrozen, the trainable parameters still numbered beyond 100 million.  This is the major reason why the VGG16 CNN is so slow to train.
+
+An interesting trick that we found in the code from Ms. Nicolas's code
