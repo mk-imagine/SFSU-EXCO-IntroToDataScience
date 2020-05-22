@@ -1,7 +1,7 @@
 # SFSU - EXCO - Intro-to-Data-Science
-##### By: Mark Kim and Xuantong (Queenie) Qian
 
 ## Diabetic Retinopathy Detection using VGG16
+##### By: Mark Kim and Xuantong (Queenie) Qian
 ### Code HEAVILY based from kernal of Dana Elisa Nicolas on Kaggle
 
 This is the final project for EXCO - Intro to Data Science.
