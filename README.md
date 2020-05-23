@@ -6,7 +6,7 @@
 
 This is the final project for EXCO - Intro to Data Science.
 
-Diabetic Retinopathy is a disease that causes retinal damage due to diabetes.  It is a leading cause of diabetes in developed countries (http://www.diabetes.co.uk/diabetes-complications/diabetic-retinopathy.html).
+Diabetic Retinopathy is a disease that causes retinal damage due to diabetes.  It is a leading cause of blindness in developed countries (http://www.diabetes.co.uk/diabetes-complications/diabetic-retinopathy.html).
 
 #### The Data
 For this project we found a dataset containing images that have already been categorized into 5 categories of diabetic retinopathy: None, Mild, Moderate, Proliferate, and Severe.  The objective of our project was to create a machine learning model that would accurately predict the severity of diabetic retinopathy from an image presented to it.  Because of the accuracy and ease of use, we decided to implement the VGG16 Convolutional Neural Network for classification and detection.
